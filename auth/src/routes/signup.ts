@@ -31,7 +31,6 @@ router.post(
       password,
     });
     await newUser.save();
-    console.log("creating a user...");
 
     const userToken = jwt.sign(
       {

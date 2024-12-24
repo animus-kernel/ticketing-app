@@ -1,6 +1,6 @@
 import { NextFunction, Request, Response } from "express";
 import { validationResult } from "express-validator";
-import { RequestValidationError } from "../errors/request_validation_error";
+import { RequestValidationError } from "../errors";
 
 export function validateRequest(
   req: Request,

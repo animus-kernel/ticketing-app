@@ -16,3 +16,15 @@ build:
         manual:
           - dest: .
             src: "src/**/*.ts"
+    - image: animuskernel/client
+      context: client
+      docker:
+        dockerfile: Dockerfile
+      sync:
+        manual:
+          - dest: .
+            src: "**/*.tsx"
+          - dest: .
+            src: "**/*.ts"
+          - dest: .
+            src: "**/*.js"

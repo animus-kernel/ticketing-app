@@ -1,5 +1,5 @@
-import mongoose, { Document, HydratedDocument, Model } from "mongoose";
-import { PasswordManager } from "../utils/password_manager";
+import mongoose, { Document, Model } from "mongoose";
+import { PasswordManager } from "../utils";
 
 interface IUser extends Document {
   email: string;

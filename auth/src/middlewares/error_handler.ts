@@ -1,5 +1,5 @@
 import { Request, Response, NextFunction } from "express";
-import { CustomError } from "../errors/custom_error";
+import { CustomError } from "../errors";
 
 export function errorHandler(
   err: Error,
